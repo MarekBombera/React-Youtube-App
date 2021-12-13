@@ -9,7 +9,7 @@ import Spinner from "./Components/Spinner";
 import "./styles/css/style.css";
 
 const App = () => {
-	const defaultSearchTerm = "good vibes music";
+	const defaultSearchTerm = "happy music";
 	const [mainVideo, setMainVideo] = useState(null);
 	const [sideBarVideos, setSideBarVideos] = useState([]);
 	const [allSearchedVideos, setAllSearchedVideos] = useState([]);

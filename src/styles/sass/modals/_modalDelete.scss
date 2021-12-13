@@ -1,0 +1,32 @@
+@use "../base/colors" as *;
+
+.comment-delete-modal {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	width: 150%;
+	padding: 0px 30px;
+	min-height: 200px;
+	transform: translate(-50%, -50%);
+	background-color: $default-background-color;
+	border-radius: 1%;
+	z-index: 1001;
+
+	.comment-delete-content-container {
+		display: flex;
+		flex-direction: column;
+
+		.comment-delete-modal-hr-container {
+			width: 100%;
+		}
+		.comment-delete-modal-buttons-container {
+			display: flex;
+			justify-content: center;
+			margin-top: 5%;
+			gap: 10%;
+		}
+	}
+}

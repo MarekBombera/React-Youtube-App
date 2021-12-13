@@ -1,0 +1,41 @@
+@use "../utilities/noSelection" as *;
+
+.navigation-icons-container {
+	@extend %noSelection;
+	display: flex;
+	grid-column: 1 / 1;
+	margin-left: 11%;
+
+	.home-logo-container {
+		display: flex;
+		align-items: center;
+
+		.logo {
+			height: 50px;
+			margin-right: 2%;
+		}
+		h2 {
+			margin: 0;
+		}
+	}
+	.navigation-arrows-container {
+		display: flex;
+		align-items: center;
+		margin-left: 3%;
+
+		.navigation-arrow-back,
+		.navigation-arrow-forward {
+			min-width: 43px;
+			width: 2.5rem;
+			height: 2.5rem;
+			color: white;
+		}
+	}
+}
+
+@media (max-width: 850px) {
+	.navigation-icons-container {
+		justify-content: center;
+		grid-column: 3 /5;
+	}
+}

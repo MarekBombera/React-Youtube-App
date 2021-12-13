@@ -1,0 +1,25 @@
+$header-color: rgb(35, 35, 35);
+$default-background-color: rgb(29, 29, 29);
+$border-color: rgb(58, 58, 58);
+$default-button-color: rgb(58, 58, 58);
+$active-button-color: rgb(76, 146, 252);
+
+$heading-color: rgb(243, 243, 243);
+$comments-paragraph-color: rgb(230, 230, 230);
+$paragraph-color: rgb(185, 185, 185);
+$text-input-background-color: rgb(10, 10, 10);
+
+*::selection {
+	color: white;
+	background-color: rgb(85, 88, 253);
+}
+
+input::selection {
+	color: white;
+	background-color: blue;
+}
+
+textarea::selection {
+	color: white;
+	background-color: blue;
+}

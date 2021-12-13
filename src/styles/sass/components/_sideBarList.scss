@@ -1,0 +1,49 @@
+@use "../base/colors" as *;
+@use "../utilities/noSelection" as *;
+
+.sidebar-list-container {
+	display: flex;
+	flex-direction: column;
+	margin-left: 5%;
+
+	.side-video-container {
+		display: flex;
+		max-height: 150px;
+		margin-bottom: 1%;
+		gap: 2%;
+
+		.side-video-thumbnail-container {
+			display: flex;
+			width: 50%;
+
+			.side-video-thumbnail-img {
+				@extend %noSelection;
+				max-width: 100%;
+			}
+		}
+
+		.side-video-description {
+			display: flex;
+			flex-direction: column;
+			overflow: hidden;
+			width: 50%;
+		}
+	}
+}
+
+@media (max-width: 1500px) {
+	.sidebar-list-container {
+		grid-column: 1 / 3;
+		margin-left: 0;
+		margin-top: 3%;
+	}
+	.side-video-container {
+		max-height: 500px !important;
+	}
+}
+
+@media (max-width: 850px) {
+	.sidebar-list-container {
+		grid-column: 1 / 4;
+	}
+}

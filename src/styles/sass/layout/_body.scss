@@ -1,0 +1,13 @@
+@use "../base/colors" as *;
+
+body {
+	background-color: $default-background-color;
+}
+
+.body-container {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+	margin: 2%;
+
+	background-color: $default-background-color;
+}

@@ -1,0 +1,14 @@
+@use "../base/colors" as *;
+
+.header-container {
+	display: grid;
+	grid-template-columns: repeat(6, 1fr);
+
+	background-color: $header-color;
+}
+
+@media (max-width: 850px) {
+	.header-container {
+		grid-template-rows: repeat(2, 1fr);
+	}
+}

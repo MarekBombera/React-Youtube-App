@@ -1,0 +1,22 @@
+@use "./colors" as *;
+
+%button {
+	margin-top: 1px;
+	width: 100px;
+	height: 38px;
+	border: none;
+	font-size: 1rem;
+}
+
+.default-button-style {
+	@extend %button;
+	background-color: $default-button-color;
+	color: rgb(255, 255, 255);
+}
+
+.active-button-style {
+	@extend %button;
+	background-color: $active-button-color;
+	color: rgb(0, 0, 0);
+	cursor: pointer;
+}

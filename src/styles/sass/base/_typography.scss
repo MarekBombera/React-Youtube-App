@@ -1,0 +1,25 @@
+@use "./colors" as *;
+
+h2 {
+	color: $heading-color;
+}
+h2.video-creator {
+	font-family: Nunito, Helvetica, Arial;
+}
+
+h3,
+h4,
+h5 {
+	color: $heading-color;
+	font-family: Nunito, Helvetica, Arial;
+}
+
+p {
+	color: $paragraph-color;
+	font-family: Roboto, Helvetica, Arial;
+}
+
+p.comments-text {
+	color: $comments-paragraph-color;
+	font-size: 1.1rem;
+}

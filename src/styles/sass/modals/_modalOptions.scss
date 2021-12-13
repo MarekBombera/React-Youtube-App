@@ -1,0 +1,17 @@
+@use "../base/colors" as *;
+
+.comment-options-modal {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	padding: 20px 30px;
+	transform: translate(-50%, -50%);
+	background-color: $default-background-color;
+	border-radius: 1%;
+	z-index: 1001;
+
+	.comment-options-buttons-container {
+		display: flex;
+		gap: 5%;
+	}
+}
